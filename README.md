@@ -1,24 +1,17 @@
-## README
+## Reform Nested Form Example
+ I couldn't find any decent examples for Reform using nested  and composition forms.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Models
+ User has_one Dog has_many Toys
 
-Things you may want to cover:
+### TODO
+- [x] Nested Form - NewRegistrationForm
+- [ ] Composition - EditRegistrationForm
 
-* Ruby version
 
-* System dependencies
+Rails 5 beta3
+Ruby 2.3.0
+Reform
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+John Meehan 2016
