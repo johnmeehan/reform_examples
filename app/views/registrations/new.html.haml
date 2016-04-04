@@ -1,0 +1,15 @@
+%h1 New Registration
+= simple_form_for @form, url: registrations_path do |f|
+  = f.input :name
+  = f.input :age
+  = f.input :email
+
+  %h2 Dog
+  = f.simple_fields_for :dog do |d|
+    = d.input :name
+
+    %h3 Toys
+    =d.simple_fields_for :toys do |t|
+      = t.input :name
+
+  = f.button :submit, "Create"
